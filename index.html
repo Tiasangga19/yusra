@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yusra Organizer | Luxury Wedding & Event</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --emerald: #023627;
+            --emerald-light: #044934;
+            --gold: #d4af37;
+            --gold-gradient: linear-gradient(135deg, #d4af37 0%, #f1d279 50%, #b8860b 100%);
+            --white: #ffffff;
+            --soft-gray: #f8f9fa;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Montserrat', sans-serif; background-color: var(--white); color: #333; overflow-x: hidden; }
+
+        /* Navbar */
+        nav {
+            position: fixed;
+            top: 0; width: 100%;
+            background: var(--emerald);
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            border-bottom: 2px solid var(--gold);
+        }
+        .nav-logo-img { height: 50px; }
+        .nav-links { display: flex; list-style: none; }
+        .nav-links li { margin-left: 25px; }
+        .nav-links a { color: var(--white); text-decoration: none; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; transition: 0.3s; }
+        .nav-links a:hover { color: var(--gold); }
+
+        /* Hero Section */
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            background: linear-gradient(rgba(2, 54, 39, 0.8), rgba(2, 54, 39, 0.8)), 
+                        url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .main-logo { width: 220px; margin-bottom: 20px; }
+        h1 { font-family: 'Playfair Display', serif; font-size: 3.5rem; color: var(--gold); letter-spacing: 4px; }
+        .tagline { font-size: 1rem; color: var(--white); text-transform: uppercase; letter-spacing: 3px; margin-top: 10px; opacity: 0.9; }
+
+        /* About Section (Tentang Yusra yang Panjang) */
+        .about-section { padding: 100px 15%; background: var(--soft-gray); text-align: center; }
+        .about-section h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--emerald); margin-bottom: 30px; }
+        .about-content { font-size: 1.05rem; line-height: 2; color: #444; text-align: justify; }
+
+        /* Price List Section */
+        .price-section { padding: 100px 10%; background: var(--white); }
+        .section-title { text-align: center; margin-bottom: 60px; font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--emerald); }
+        .price-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .price-card { background: var(--emerald); color: var(--white); padding: 40px; border-radius: 15px; border: 1px solid var(--gold); transition: 0.3s; text-align: center; }
+        .price-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(2, 54, 39, 0.2); }
+        .price-card i { font-size: 3rem; color: var(--gold); margin-bottom: 20px; }
+        .btn-download { display: inline-block; margin-top: 25px; padding: 12px 25px; background: var(--gold-gradient); color: var(--emerald); text-decoration: none; font-weight: bold; border-radius: 5px; }
+
+        /* Socials & Email Section (Lights) */
+        .socials-section { padding: 80px 10%; background: var(--emerald); color: var(--white); text-align: center; border-top: 2px solid var(--gold); }
+        .social-icons { display: flex; justify-content: center; gap: 40px; margin-top: 40px; flex-wrap: wrap; }
+        .social-box { text-decoration: none; color: var(--white); transition: 0.3s; }
+        .social-box:hover { color: var(--gold); }
+        .social-box i { font-size: 2.5rem; display: block; margin-bottom: 10px; }
+
+        /* Footer */
+        footer { background: #01281d; color: var(--white); text-align: center; padding: 40px 20px; font-size: 0.9rem; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .nav-links { display: none; }
+            .about-section { padding: 60px 5%; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <img src="WhatsApp_Image_2026-02-21_at_23.56.41-removebg-preview.png" alt="Yusra Logo" class="nav-logo-img">
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Tentang Yusra</a></li>
+            <li><a href="#pricelist">Price List</a></li>
+            <li><a href="#socials">Media Sosial</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <img src="WhatsApp_Image_2026-02-21_at_23.56.41-removebg-preview.png" alt="Yusra Logo" class="main-logo">
+        <h1>YUSRA ORGANIZER</h1>
+        <p class="tagline">"We Handle the Details, You Enjoy the Moment"</p>
+    </header>
+
+    <section class="about-section" id="about">
+        <h2>Tentang Yusra Organizer</h2>
+        <div class="about-content">
+            <p>
+                Yusra Organizer lahir dari keyakinan mendalam bahwa setiap pernikahan bukan sekadar rangkaian acara biasa, melainkan sebuah momen sakral yang penuh makna dan menjadi awal dari perjalanan hidup yang baru bagi setiap pasangan. Kami percaya bahwa kebahagiaan sejati di hari istimewa tercipta dari persiapan yang dilakukan dengan sepenuh hati, ketelitian tinggi, serta rasa tanggung jawab yang penuh.
+            </p>
+            <br>
+            <p>
+                Sebagai tim yang solid, profesional, dan penuh kehangatan, kami tidak hanya berperan sebagai penyelenggara acara, tetapi juga hadir sebagai partner dan sahabat bagi calon pengantin[cite: 223, 224]. Yusra Organizer senantiasa mendengarkan setiap cerita, memahami setiap keinginan unik, serta membantu meredakan kekhawatiran agar proses menuju hari bahagia terasa tenang dan menyenangkan bagi Anda.
+            </p>
+            <br>
+            <p>
+                Dengan pengalaman menangani berbagai konsep pernikahan—mulai dari acara yang sederhana dan intim hingga perayaan yang megah serta elegan—kami berpegang teguh pada satu prinsip utama: menghadirkan pernikahan yang berkesan, tertata dengan sempurna, dan sesuai dengan impian setiap pasangan. Sesuai dengan moto kami, <i>"We handle the details, you enjoy the moment"</i>.
+            </p>
+        </div>
+    </section>
+
+    <section class="price-section" id="pricelist">
+        <h2 class="section-title">Our Price List</h2>
+        <div class="price-grid">
+            <div class="price-card">
+                <i class="fas fa-file-pdf"></i>
+                <h3>PL WO ONLY</h3>
+                <p>Tim profesional mulai dari 4 hingga 12 crew. Investasi: Mulai dari IDR 1,9 Juta hingga IDR 6,4 Juta.</p>
+                <a href="/Users/marketing/Downloads/yusra.html/PL WO ONLY/PL WO ONLY YUSRA ORGANIZER.pdf" class="btn-download" download>Download PDF</a>
+            </div>
+            <div class="price-card">
+                <i class="fas fa-boxes"></i>
+                <h3>PL ALL PACKAGE</h3>
+                <p>Solusi lengkap "terima beres" yang mencakup seluruh kebutuhan utama pernikahan.</p>
+                <a href="/Users/marketing/Downloads/yusra.html/PL ALL PACKAGE/PL ALL PACKAGE YUSRA 2026 .pdf" class="btn-download" download>Download PDF</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="socials-section" id="socials">
+        <h2 style="font-family: 'Playfair Display'; font-size: 2.5rem; margin-bottom: 10px;">Connect With Us</h2>
+        <p style="opacity: 0.8;">Hubungi admin kami dan ikuti perjalanan kami di media sosial</p>
+        
+        <div class="social-icons">
+            <a href="https://wa.me/62895342562405" class="social-box" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                <strong>Admin (yusra organizer)</strong>
+                <p>0895-3425-62405</p>
+            </a>
+            <a href="https://www.instagram.com/yusra.organizer" class="social-box" target="_blank">
+                <i class="fab fa-instagram"></i>
+                <strong>Instagram</strong>
+                <p>@yusra.organizer</p>
+            </a>
+            <a href="mailto:yusraorganizer@gmail.com" class="social-box">
+                <i class="far fa-envelope"></i>
+                <strong>Email</strong>
+                <p>yusraorganizer@gmail.com</p>
+            </a>
+            <a href="#" class="social-box" target="_blank">
+                <i class="fab fa-tiktok"></i>
+                <strong>TikTok</strong>
+                <p>Yusra Organizer</p>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Yusra Organizer. All Rights Reserved.</p>
+        <p style="font-size: 0.7rem; margin-top: 10px; opacity: 0.5;">Designed for Luxury & Elegance</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling untuk navigasi
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
